@@ -21,12 +21,20 @@ I am 22 years old and I enjoy sports, astrophysics and neural networks. Since my
 
 ## Code example
 
-'''
+    
         
     def draw_triangle(size): 
         
      for i in range(size):
         print(" " * (size - i - 1) + "*" * (2 * i + 1))
-'''
+     
 
 ## Experience
+
+## Education
+
+* Immanuel Kant Baltic Federal University - business informatics (content management)
+* Yandex workshop course - frontend
+
+## English
+A2 - I am an excellent reader and perceive information by ear, but I am bad at grammar (there is an assumption that native speakers are too)
