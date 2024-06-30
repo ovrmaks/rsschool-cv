@@ -18,3 +18,15 @@ I am 22 years old and I enjoy sports, astrophysics and neural networks. Since my
 * Methods: Agile, Scrum
 * Version Control systems: Git
 * Development Developers: PyCharm, Visual Studio Code
+
+## Code example
+
+'''
+        
+    def draw_triangle(size): 
+        
+     for i in range(size):
+        print(" " * (size - i - 1) + "*" * (2 * i + 1))
+'''
+
+## Experience
