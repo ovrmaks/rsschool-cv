@@ -4,7 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css" >
 </head>
 <body>
+  <header>
+    <h1> CV  </h1>
+  </header>
+  
+<div class="flex-container">
+  
+  <div id="left">
+    <img src="assets\img\Pf_picture.jpg" alt="avatar of a man">
+      <h2 id="name"> Pyartel <br> Maksim </h2>
+      <h3 id="jobTitle"> Junior Frontend Developer </h3>
+        <hr id="mainHR">
+   
+      <div>
+        <h3> Contact </h3>
+        <h4> Discord </h4>
+          <p>ovrmaks</p>
+        <h4> Email </h4>
+         <p>Partelmaksim@gmail.com</p>
+        <h4> Phone </h4>
+         <p>+7(909)78-73-574</p>
+      </div>
+      <h3> Сoncerning me </h3>
+      <p id="justified"> I am 22 years old and I enjoy sports, astrophysics and neural networks. Since my school days, I have had a passion for programming and computer science. At the moment, I am exploring the world of frontend development and sometimes I regret not starting earlier. Now, I need to learn much more in order to keep up with the competition. The brain can be resistant to forming new neural connections, so I have set myself a goal to complete this course successfully.
+      </p>
+    
+    </div>
+  
+  <div id="right">
+    <h3>Code example</h3>
+    <hr>
+        <pre>
+          import random
+
+          user_wins = 0
+          computer_wins = 0
+          
+          options = ["rock", "paper", "scissors"]
+          
+          while True:
+              user_input = input("Type Rock/Paper/Scissors or Q to quit: ").lower()
+              if user_input == "q":
+                  break
+          
+              if user_input not in options:
+                  continue
+          
+              random_number = random.randint(0, 2)
+              # rock: 0, paper: 1, scissors: 2
+              computer_pick = options[random_number]
+              print("Computer picked", computer_pick + ".")
+          
+              if user_input == "rock" and computer_pick == "scissors":
+                  print("You won!")
+                  user_wins += 1
+          
+              elif user_input == "paper" and computer_pick == "rock":
+                  print("You won!")
+                  user_wins += 1
+          
+              elif user_input == "scissors" and computer_pick == "paper":
+                  print("You won!")
+                  user_wins += 1
+          
+              else:
+                  print("You lost!")
+                  computer_wins += 1
+          
+          print("You won", user_wins, "times.")
+          print("The computer won", computer_wins, "times.")
+          print("Goodbye!")
+
+        </pre>
+    
+    <h3>Education</h3>
+    <hr>
+    <ul>
+       <li>Immanuel Kant Baltic Federal University - business informatics (content management)</li>
+       <li>Yandex workshop course - frontend </li>
+   </ul>
+    
+    <h3>Skills</h3>
+    <hr>
+    <ul>
+      <li>Programming languages: Python, JavaScript, Kotlin</li>
+      <li>Editors and libraries: React, Node.js, Django</li>
+      <li>Methods: Agile, Scrum</li>
+      <li>Version Control systems: Git</li>
+      <li>Development Developers: PyCharm, Visual Studio Code</li>
+    </ul>
+    <h3>English</h3>
+    <h5>
+      B2 - I am an excellent reader and perceive information by ear, but I am bad at grammar (there is an assumption that native speakers are too)
+    </h5>
+  </div>
+</div>
+  
+ <footer>
+   07.07.2024: <a href="https://github.com/ovrmaks"> GitHub,</a>  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img src="assets\svg\rs-school-logo.svg" alt="RS icon"></a> 
+ </footer>
 </body>
 </html>
